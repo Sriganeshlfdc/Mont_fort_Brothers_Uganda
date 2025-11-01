@@ -22,12 +22,25 @@ nav {
 
 .navleft img {
   height: 60px;
+  width: auto;
 }
 
-.navleft p {
+.title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-group p {
   font-size: 30px;
   font-weight: bold;
   margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #f7f7f7;
+  margin-top: 3px;
+  font-weight: bold;
 }
 
 .nav-controls {
@@ -63,7 +76,6 @@ nav {
   z-index: 1100;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -95,7 +107,7 @@ nav {
   }
 
   .navright a:hover {
-    background-color: darkblue;
+    background-color: #f0f0f0;
     color: #ffda5e;
   }
 }
