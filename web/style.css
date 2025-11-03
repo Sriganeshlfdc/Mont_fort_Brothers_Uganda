@@ -300,6 +300,7 @@ main {
 .location-grid {
   margin: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px 20px;
   text-align: center;
   background-color: #f0f8ff;
@@ -388,7 +389,95 @@ footer {
   padding: 2px;
   margin: 0;
 }
+.gallery-loop {
+  background-color: #fefefe;
+  padding: 40px 20px;
+  overflow: hidden;
+}
 
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 40s linear infinite;
+  gap: 10px;
+}
+
+.gallery-strip {
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  width: 220px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.gallery-item span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* School Specialties - Vertical Cards */
+.specialties-list {
+  background-color: #027ae4e5;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.specialty-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.specialty-card {
+  background-color: #fff;
+  border-left: 6px solid #ffda5e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.specialty-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.specialty-card .details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: darkblue;
+}
+
+.specialty-card .details p {
+  margin: 5px 0 0;
+  font-size: 15px;
+  color: #333;
+}
 /* Extra Small Mobile: 200px–479px */
 @media (max-width: 479px) {
   .navleft img {
@@ -437,6 +526,42 @@ footer {
     background-color: #f0f0f0;
     color: #ffda5e;
   }
+
+  .specialty-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-box img {
+    height: 160px;
+  }
+
+  .specialty-box h3 {
+    font-size: 16px;
+  }
+
+  .specialty-box p {
+    font-size: 13px;
+  }
+
+  .gallery-item {
+    width: 160px;
+  }
+
+  .gallery-item img {
+    height: 120px;
+  }
+
+  .gallery-item span {
+    font-size: 13px;
+  }
+
+  .specialty-card .details h3 {
+    font-size: 16px;
+  }
+
+  .specialty-card .details p {
+    font-size: 13px;
+  }
 }
 
 /* Small Tablets/Mobile: 480px–767px */
@@ -483,6 +608,42 @@ footer {
     background-color: #f0f0f0;
     color: #ffda5e;
   }
+
+  .specialty-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-box img {
+    height: 180px;
+  }
+
+  .specialty-box h3 {
+    font-size: 17px;
+  }
+
+  .specialty-box p {
+    font-size: 14px;
+  }
+
+  .gallery-item {
+    width: 180px;
+  }
+
+  .gallery-item img {
+    height: 130px;
+  }
+
+  .gallery-item span {
+    font-size: 14px;
+  }
+
+  .specialty-card .details h3 {
+    font-size: 18px;
+  }
+
+  .specialty-card .details p {
+    font-size: 14px;
+  }
 }
 
 /* Medium Screens: 768px–1199px */
@@ -508,6 +669,42 @@ footer {
 
   .subtitle {
     font-size: 14px;
+  }
+
+  .specialty-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specialty-box img {
+    height: 200px;
+  }
+
+  .specialty-box h3 {
+    font-size: 18px;
+  }
+
+  .specialty-box p {
+    font-size: 15px;
+  }
+
+  .gallery-item {
+    width: 200px;
+  }
+
+  .gallery-item img {
+    height: 140px;
+  }
+
+  .gallery-item span {
+    font-size: 14px;
+  }
+
+  .specialty-card .details h3 {
+    font-size: 19px;
+  }
+
+  .specialty-card .details p {
+    font-size: 15px;
   }
 }
 
@@ -535,5 +732,42 @@ footer {
   .subtitle {
     font-size: 16px;
   }
+
+  .specialty-columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .specialty-box img {
+    height: 220px;
+  }
+
+  .specialty-box h3 {
+    font-size: 20px;
+  }
+
+  .specialty-box p {
+    font-size: 16px;
+  }
+
+  .gallery-item {
+    width: 220px;
+  }
+
+  .gallery-item img {
+    height: 160px;
+  }
+
+  .gallery-item span {
+    font-size: 14px;
+  }
+
+  .specialty-card .details h3 {
+    font-size: 20px;
+  }
+
+  .specialty-card .details p {
+    font-size: 16px;
+  }
 }
+
 
