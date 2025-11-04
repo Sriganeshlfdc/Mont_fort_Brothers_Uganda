@@ -1,4 +1,4 @@
-// Toggle mobile menu
+// ✅ Toggle mobile menu
 function toggleMenu() {
   const nav = document.getElementById("navlinks");
   const toggleBtn = document.getElementById("menuToggle");
@@ -6,7 +6,7 @@ function toggleMenu() {
   toggleBtn.textContent = nav.classList.contains("active") ? "✖" : "☰";
 }
 
-// Slideshow logic
+// ✅ Slideshow logic
 let slideIndex = 0;
 showSlides();
 
@@ -21,7 +21,7 @@ function showSlides() {
   setTimeout(showSlides, 5000);
 }
 
-// Scroll-triggered animation (repeats on scroll)
+// ✅ Scroll-triggered animation for .scroll-animate
 function revealOnScroll() {
   const elements = document.querySelectorAll('.scroll-animate');
   const windowHeight = window.innerHeight;
@@ -38,5 +38,26 @@ function revealOnScroll() {
   });
 }
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+// ✅ Scroll-triggered animation for .animate-text
+function revealTextOnScroll() {
+  const animatedTexts = document.querySelectorAll('.animate-text');
+  const windowHeight = window.innerHeight;
+
+  animatedTexts.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 50) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+// ✅ Event listeners
+window.addEventListener('scroll', () => {
+  revealOnScroll();
+  revealTextOnScroll();
+});
+
+window.addEventListener('load', () => {
+  revealOnScroll();
+  revealTextOnScroll();
+});
