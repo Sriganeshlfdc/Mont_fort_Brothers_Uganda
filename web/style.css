@@ -1410,7 +1410,35 @@ input:focus, textarea:focus, a:focus, button:focus{ outline: 3px solid rgba(255,
     background-color: #f0f0f0;
     color: #ffda5e;
   }
+.about-grid {
+    padding: 20px;
+  }
 
+  .about-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-box {
+    padding: 16px;
+  }
+
+  .about-box img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .about-box h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .about-box p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
   .specialty-columns {
     grid-template-columns: 1fr;
   }
