@@ -18,7 +18,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 5000); // Change slide every 5 seconds
 }
 
 // ✅ Scroll-triggered animation for .scroll-animate
@@ -51,12 +51,17 @@ function revealTextOnScroll() {
   });
 }
 
-// ✅ Event listeners
+// ✅ Throttle scroll events for performance
+let scrollTimeout;
 window.addEventListener('scroll', () => {
-  revealOnScroll();
-  revealTextOnScroll();
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    revealOnScroll();
+    revealTextOnScroll();
+  }, 100);
 });
 
+// ✅ Initial load trigger
 window.addEventListener('load', () => {
   revealOnScroll();
   revealTextOnScroll();
