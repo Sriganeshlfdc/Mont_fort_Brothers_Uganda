@@ -288,6 +288,129 @@ main{
   opacity: 1;
   transform: translateY(0);
 }
+.content {
+  padding: 40px 20px;
+  text-align: center;
+}
+.section-title {
+  color: #fdc50e;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.section-subtitle {
+  font-size: 18px;
+  color: #ddd;
+  font-style: italic;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.sectiontitle {
+  color: #021a3f;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sectionsubtitle {
+  font-size: 18px;
+  color: #000000;
+  font-style: italic;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.about-grid {
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #021a3f, #003366);
+  padding: 20px;
+}
+.about-columns {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  grid-template-rows: auto 4fr auto;
+}
+.about-box {
+  background-color: white;
+  border: 4px solid #ffba0c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  justify-items: center;
+  transition: trasform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.about-box h3 {
+  font-size: 20px;
+  color: #021a3f;
+  font-weight: 700;
+}
+.about-box p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.location-grid{
+  display: grid;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: #5c0000 4px solid;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  justify-content: space-between;
+}
+.location-columns {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin: 20px 0px;
+}
+.location-box{
+  background-color: #ddd;
+  border: #ffba0c 4px solid;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.about-box img, .location-box img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.8s ease;
+}
+.about-box:nth-child(3) img{
+  scale: 1;
+  width: 70%;
+  object-fit: contain;
+}
+.about-box:hover img, .location-box:hover img {
+  transform: scale(1.05);
+}
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about-box:hover , 
+.location-box:hover {
+  transform: translateY(-8px);
+}
 /* Responsive */
 @media (max-width:699px) {
   *,*::before, *::after {
