@@ -1035,31 +1035,91 @@ footer {
 }
 
 /* contact info styling */
-.contact-info{ padding: 22px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius: 12px; border: 1px solid rgba(255,255,255,0.03); }
-.contact-info h2{ color: #ffd965; margin: 0 0 10px; font-size: 24px; }
-.contact-info p{ color: rgba(234,244,255,0.95); margin-bottom: 16px; font-size: 15px; }
+.contact-info{
+   
+  padding: 22px; 
+  background: linear-gradient(180deg, rgba(255,255,255,0.02),rgba(255,255,255,0.01)); 
+  border-radius: 12px; 
+  border: 1px solid rgba(255,255,255,0.03); 
+}
+.contact-info h2{ 
+  color: #ffd965;
+   margin: 0 0 10px;
+    font-size: 24px; }
+.contact-info p{ 
+  color: rgba(234,244,255,0.95); 
+  margin-bottom: 16px; 
+  font-size: 15px; }
 
 /* meta rows */
-.contact-meta{ display:block; gap:10px; margin-bottom:16px; }
-.meta-row{ display:flex; justify-content:space-between; align-items:center; padding:10px 12px; border-radius:8px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.02); margin-bottom:8px; }
-.meta-row strong{ color:#dbefff; font-weight:700; }
-.meta-row span, .meta-row a{ color:#eaf4ff; font-size:14px; text-decoration:none; }
-.meta-row a:hover{ color: #ffd965; text-decoration:underline; }
+.contact-meta{
+   display:block;
+    gap:10px; 
+    margin-bottom:16px; }
+.meta-row{ 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  padding:10px 12px;
+   border-radius:8px; 
+   background: rgba(255,255,255,0.02); 
+   border: 1px solid rgba(255,255,255,0.02);
+    margin-bottom:8px; 
+  }
+.meta-row strong{
+   color:#dbefff; 
+   font-weight:700;
+   }
+.meta-row span, .meta-row a{ 
+  color:#eaf4ff;
+   font-size:14px;
+    text-decoration:none; }
+.meta-row a:hover{ 
+  color: #ffd965; 
+  text-decoration:underline; }
 
 /* mission note */
-.mission-note{ color: rgba(234,244,255,0.9); font-style:italic; margin-top:12px; }
+.mission-note{ 
+  color: rgba(234,244,255,0.9);
+   font-style:italic;
+    margin-top:12px; }
 
 /* quick buttons below info */
-.contact-quick{ display:flex; gap:12px; margin-top:18px; flex-wrap:wrap; }
-.btn.ghost{ background: transparent; border:1px solid rgba(255,255,255,0.12); color:#eaf4ff; padding:8px 14px; border-radius:10px; font-weight:700; }
-.btn.ghost:hover{ background: rgba(255,217,94,0.12); color:#021a3f; border-color: rgba(255,217,94,0.22); transform:translateY(-3px); }
+.contact-quick{ 
+  display:flex; 
+  gap:12px; 
+  margin-top:18px;
+   flex-wrap:wrap;
+   }
+.btn.ghost{ 
+  background: transparent; 
+  border:1px solid rgba(255,255,255,0.12); 
+  color:#eaf4ff; padding:8px 14px;
+   border-radius:10px; 
+   font-weight:700; }
+.btn.ghost:hover{ 
+  background: rgba(255,217,94,0.12);
+   color:#021a3f;
+    border-color: rgba(255,217,94,0.22);
+     transform:translateY(-3px); }
 
 /* contact form card */
-.contact-form{ padding:20px; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border-radius:12px; border:1px solid rgba(255,255,255,0.03); box-shadow: 0 10px 30px rgba(0,10,30,0.18); }
-.contact-form h3{ color:#ffd965; margin:0 0 12px; }
+.contact-form{ 
+  padding:20px; 
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+   border-radius:12px;
+    border:1px solid rgba(255,255,255,0.03);
+     box-shadow: 0 10px 30px rgba(0,10,30,0.18); 
+    }
+.contact-form h3{ 
+  color:#ffd965;
+   margin:0 0 12px; }
 
 /* form layout */
-.form-grid{ display:flex; flex-direction:column; gap:12px; }
+.form-grid{ 
+  display:flex; 
+  flex-direction:column;
+  gap:12px; }
 .form-grid input[type="text"], .form-grid input[type="email"], .form-grid textarea{
   width:100%;
   padding:12px 14px;
@@ -1072,17 +1132,52 @@ footer {
 .form-grid textarea{ min-height:130px; resize:vertical; }
 
 /* form actions row */
-.form-actions{ display:flex; gap:10px; justify-content:flex-end; margin-top:6px; }
-.btn.primary{ background: linear-gradient(90deg,#ffd965,#ffda5e); color:#022237; font-weight:800; padding:10px 16px; border-radius:10px; border:none; }
-.btn.subtle{ background: transparent; border:1px solid rgba(0,0,0,0.06); color:#eaf4ff; padding:8px 12px; border-radius:8px; }
-.btn.primary:hover{ transform: translateY(-3px); box-shadow: 0 14px 30px rgba(1,34,55,0.18); }
+.form-actions{ 
+  display:flex; 
+  gap:10px; 
+  justify-content:flex-end; 
+  margin-top:6px; }
+.btn.primary{
+   background: linear-gradient(90deg,#ffd965,#ffda5e); 
+   color:#022237; 
+   font-weight:800;
+    padding:10px 16px;
+     border-radius:10px;
+      border:none; }
+.btn.subtle{
+   background: transparent; 
+   border:1px solid rgba(0,0,0,0.06);
+    color:#eaf4ff; 
+    padding:8px 12px;
+     border-radius:8px; }
+.btn.primary:hover{
+   transform: translateY(-3px); 
+   box-shadow: 0 14px 30px rgba(1,34,55,0.18); }
 
 /* footer */
-footer{ background: linear-gradient(90deg,#00172b,#00325a); color: rgba(234,244,255,0.9); padding:18px 12px; margin-top:20px; border-top:1px solid rgba(255,255,255,0.02); }
-.footer-inner{ max-width:1100px; margin:0 auto; display:flex; gap:12px; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+footer{
+   background: linear-gradient(90deg,#00172b,#00325a); 
+   color: rgba(234,244,255,0.9); 
+   padding:18px 12px;
+    margin-top:20px; 
+   border-top:1px solid rgba(255,255,255,0.02); }
+.footer-inner{ 
+  max-width:1100px;
+   margin:0 auto; 
+   display:flex;
+    gap:12px; 
+    justify-content:space-between;
+     align-items:center;
+      flex-wrap:wrap; }
 .footer-inner p{ margin:0; font-size:14px; }
-.footer-links a{ color: rgba(234,244,255,0.85); margin-left:12px; text-decoration:none; font-weight:600; }
-.footer-links a:hover{ color:#ffd965; text-decoration:underline; }
+.footer-links a{ 
+  color: rgba(234,244,255,0.85);
+   margin-left:12px;
+    text-decoration:none;
+     font-weight:600; }
+.footer-links a:hover{
+   color:#ffd965;
+    text-decoration:underline; }
 
 /* small interaction & accessibility */
 input:focus, textarea:focus, a:focus, button:focus{ outline: 3px solid rgba(255,217,94,0.14); outline-offset:2px; }

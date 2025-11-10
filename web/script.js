@@ -1,15 +1,12 @@
-// ✅ Toggle mobile menu
+
 function toggleMenu() {
   const nav = document.getElementById("navlinks");
   const toggleBtn = document.getElementById("menuToggle");
   nav.classList.toggle("active");
   toggleBtn.textContent = nav.classList.contains("active") ? "✖" : "☰";
 }
-
-// ✅ Slideshow logic
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   const slides = document.getElementsByClassName("slide");
   for (let i = 0; i < slides.length; i++) {
@@ -18,10 +15,8 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change slide every 5 seconds
+  setTimeout(showSlides, 5000); 
 }
-
-// ✅ Scroll-triggered animation for .scroll-animate
 function revealOnScroll() {
   const elements = document.querySelectorAll('.scroll-animate');
   const windowHeight = window.innerHeight;
@@ -37,8 +32,6 @@ function revealOnScroll() {
     }
   });
 }
-
-// ✅ Scroll-triggered animation for .animate-text
 function revealTextOnScroll() {
   const animatedTexts = document.querySelectorAll('.animate-text');
   const windowHeight = window.innerHeight;
@@ -51,7 +44,6 @@ function revealTextOnScroll() {
   });
 }
 
-// ✅ Throttle scroll events for performance
 let scrollTimeout;
 window.addEventListener('scroll', () => {
   clearTimeout(scrollTimeout);
@@ -61,7 +53,7 @@ window.addEventListener('scroll', () => {
   }, 100);
 });
 
-// ✅ Initial load trigger
+
 window.addEventListener('load', () => {
   revealOnScroll();
   revealTextOnScroll();
